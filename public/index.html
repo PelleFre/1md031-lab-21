@@ -1,1 +1,97 @@
-Hello world
+
+<meta charset="utf-8">
+<body>
+    <header>
+       <h1 style="text-align: center;"><b>Burgers Online</b></h1>
+    </header>
+    <nav> <h2>Menu items </h2></nav>
+    <main>
+       <section>
+          <h3>this is where you execute burger selection </h3>
+       </section>
+       <section>
+          <div style="float: left;margin-left: 10%;width: 26%;">
+            <h2 style="text-align: center;">The Good Burger</h2>
+             <img src="burger1.jpeg" alt="Span" title="The Good Burger" style="width: 97%;height: 400;border: 5px solid rgb(2, 2, 2) ">
+             <ul>
+                 <li>This burger is made of beef</li>
+                 <li>Very good</li>
+                 <li>The bestest</li>
+             </ul>
+          </div>
+          <div style="float: left; margin-left: 15px;width: 26%;;">
+            <h2 style="text-align: center;">The Bad Burger</h2>
+            <img src="burger2.jpeg" alt="Span" title="The Bad Burger" style="width: 97%; height: 400;border: 5px solid rgb(2, 2, 2);">
+            <ul>
+                <li>Dont belive in climate change</li>
+                <li>Good'nt</li>
+                <li>Speaks russian fluently</li>
+            </ul>
+        </div>
+        <div style="float: left;margin-left: 15px;width: 26%;">
+            <h2 style="text-align: center;">The Ugly Burger  </h2>
+            <img src="burger3.jpeg" alt="Span" title="The Ugly Burger" style="width: 97%;height: 400;border: 5px solid rgb(2, 2, 2);">
+            <ul>
+                <li>fish</li>
+                <li>disgusting</li>
+                <li>Soggy bread, dont eat</li>
+            </ul>
+         
+        </div>
+       </section>
+       <div style="clear: left; margin-left: 43%;">
+            <h2>Customer information</h2>
+            <br>
+            <p>
+                <label for="firstname">Full name</label><br>
+                <input type="text" id="firstname" name="fn" required="required" placeholder="First and last name">
+            </p>
+           
+            <p>
+                <label for="Email">Email adress</label><br>
+                <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+            </p>
+            <p>
+                <label for="Street">Street</label><br>
+                <input type="text" id="Street" name="st" placeholder="Street name">
+            </p>
+            <p>
+                <label for="House">House</label><br>
+                <input type="number" id="House" name="Ho" required="required" placeholder="House number">
+            </p>
+            <p>
+                <label for="Burger">Burger of choice</label><be>
+                <select id="Burger" name="rcp">
+                    <option>The Good</option>
+                    <option>The Bad</option>
+                    <option>The Ugly</option>
+                </select>
+             </p>
+             <br>
+             <p>
+                <label for="Gender">Gender</label><br>
+                
+                <input type="radio" id="male" name="gen"  value="male" >
+                <label for="male">Male</label><br>
+                
+                <input type="radio" id="female" name="gen" value="female"  >
+                <label for="female">Female</label><br>
+                
+                <input type="radio" id="other" name="gen"  value="other">
+                <label for="other">Other</label><br>
+                
+               
+               
+            </p>
+             <button type="submit" value="Send">
+                   Send Info
+              </button>
+    </div>
+    </main>
+    
+ </body>
+ <footer>
+    <div style="width: 100%;border-top: 1px solid black;clear: left; float: down;">
+        <p> © PellePri Produktions</p>
+    </div>
+</footer

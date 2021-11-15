@@ -1,45 +1,54 @@
 
 <meta charset="utf-8">
 <body>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <header>
-       <h1 style="text-align: center;"><b>Burgers Online</b></h1>
+        
+        <img src="headerpic.jpg" alt="id">
+        <h6><b>Burgers Online</b></h6>
+        
+        
     </header>
     <nav> <h2>Menu items </h2></nav>
     <main>
-       <section>
-          <h3>this is where you execute burger selection </h3>
-       </section>
-       <section>
-          <div style="float: left;margin-left: 10%;width: 26%;">
-            <h2 style="text-align: center;">The Good Burger</h2>
-             <img src="burger1.jpeg" alt="Span" title="The Good Burger" style="width: 97%;height: 400;border: 5px solid rgb(2, 2, 2) ">
-             <ul>
-                 <li>This burger is made of beef</li>
-                 <li>Very good</li>
-                 <li>The bestest</li>
-             </ul>
+       <section class="burgersection">
+          <div id ="burg1">
+            <h2>The Good Burger</h2>
+             <img src="burger1.jpeg" alt="Span" title="The Good Burger" id ="burgpic">
+             <span id="burgerThings">
+                <ul>
+                    <li>This burger is made of beef</li>
+                    <li>Very good</li>
+                    <li>The bestest</li>
+                </ul>
+            </span>
           </div>
-          <div style="float: left; margin-left: 15px;width: 26%;;">
-            <h2 style="text-align: center;">The Bad Burger</h2>
-            <img src="burger2.jpeg" alt="Span" title="The Bad Burger" style="width: 97%; height: 400;border: 5px solid rgb(2, 2, 2);">
+          <div id = "burg2">
+            <h2>The Bad Burger</h2>
+            
+            <img src="burger2.jpeg" alt="Span" title="The Bad Burger" id ="burgpic">
+            <span id="burgerThings">
             <ul>
                 <li>Dont belive in climate change</li>
                 <li>Good'nt</li>
                 <li>Speaks russian fluently</li>
             </ul>
+        </span>
         </div>
-        <div style="float: left;margin-left: 15px;width: 26%;">
-            <h2 style="text-align: center;">The Ugly Burger  </h2>
-            <img src="burger3.jpeg" alt="Span" title="The Ugly Burger" style="width: 97%;height: 400;border: 5px solid rgb(2, 2, 2);">
+        <div id ="burg3">
+            <h2> The Ugly Burger  </h2>
+            <img src="burger3.jpeg" alt="Span" title="The Ugly Burger" id ="burgpic">
+            <span id="burgerThings">
             <ul>
-                <li>fish</li>
-                <li>disgusting</li>
+                <li>Fish</li>
+                <li>Disgusting</li>
                 <li>Soggy bread, dont eat</li>
             </ul>
-         
+        </span>
         </div>
        </section>
-       <div style="clear: left; margin-left: 43%;">
+       <div id="MenuBurg">
+        <div id="MenuInner">
             <h2>Customer information</h2>
             <br>
             <p>
@@ -86,12 +95,13 @@
              <button type="submit" value="Send">
                    Send Info
               </button>
+        </div>
     </div>
     </main>
     
  </body>
  <footer>
-    <div style="width: 100%;border-top: 1px solid black;clear: left; float: down;">
+    <div>
         <p> © PellePri Produktions</p>
     </div>
 </footer

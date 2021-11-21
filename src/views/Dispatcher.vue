@@ -2,7 +2,12 @@
   <div id="orders">
     <div id="orderList">
       <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-        #{{ key }}: {{ order.orderItems.join(", ") }}
+        Name : {{ order.customer.name}}<br>
+        Email : {{order.customer.email}}<br>
+        Payment method : {{order.customer.payment}}<br>
+        Gender : {{order.customer.gender}} <br>
+        Order : {{ key }}, {{ order.orderItems}}<br>
+        ––––––––––––––––––––––––––––––––––––––––––––––––––<br>
       </div>
       <button v-on:click="clearQueue">Clear Queue</button>
     </div>

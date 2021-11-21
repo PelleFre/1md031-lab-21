@@ -5,16 +5,16 @@
     <span id="burgerThings">
         <ul>
             <li>kalories: {{burger.calories}}</li>
-            <li>{{burger.line2}}</li>
-            <li>{{burger.line3}}</li>
+            <li v-if="burger.lactose">Contains <span class="alergi">lactose</span></li>
+            <li v-if="burger.gluten">Contains <span class="alergi">gluten</span></li>
         </ul>
     </span>
 
-        <button v-on:click="decrease" type="idecrease">
+        <button v-on:click="decrease" type="decrease">
           -
         </button>
         {{ amountOrdered }}
-        <button v-on:click="increase" type="increase">
+        <button v-on:click="addBurger" type="addBurger">
           +
         </button>
              
@@ -43,9 +43,9 @@ export default {
       this.amountOrdered --
     }
   },
-   increase: function (){
+   addBurger: function () {
       this.amountOrdered ++
-      this.$emit('orderedBurger', {name: this.name,
+      this.$emit('orderedBurger', {name: this.burger.name,
       amount: this.amountOrdered});
    }
   }
@@ -54,6 +54,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.alergi{
+  font-weight: bold;
+  font-style: italic;
+  font-variant-caps:all-small-caps;
+  color: rgb(68, 41, 5);
+}
 #burg1{
    float: left;
 }
@@ -69,6 +75,5 @@ export default {
 }
 #burgerThings{
    color:honeydew ;
-   font-weight: bold;
 }
 </style>
